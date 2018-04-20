@@ -2,9 +2,9 @@
   "name": "Project-Monitoring-App",
   "version": "1.0.0",
   "description": "temp sensor pubnub",
-  "main": "temperature.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node temperature.js"
+    "start": "node app.js"
   },
   "keywords": [
     "pubnub"
