@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Sensor Data Logging
+    link(href="/css/bootstrap.css" rel="stylesheet")
+    // Custom styles for this template
+    link(href="navbar-top-fixed.css" rel="stylesheet")
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      a.navbar-brand(href="/") AMI
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href="/ami/home")
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href="/hard-ware-setup") HardWareSetUp
+          li.nav-item
+            a.nav-link.disabled(href="/about") About
+          li.nav-item
+            a.nav-link.disabled(href="/sakt") Sakt
+        form.form-inline.mt-2.mt-md-0.register-login
+          a.nav-link.disabled(href="/register") Register
+          a.nav-link.disabled(href="/login") Login
+    main.navbar.navbar-expand-md(role="main")
+    .jumbotron
+      h1 Any thing can be added here
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/jquery.js")

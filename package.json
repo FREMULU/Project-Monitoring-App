@@ -1,0 +1,30 @@
+{
+  "name": "Project-Monitoring-App",
+  "version": "1.0.0",
+  "description": "temp sensor pubnub",
+  "main": "temperature.js",
+  "scripts": {
+    "start": "node temperature.js"
+  },
+  "keywords": [
+    "pubnub"
+  ],
+  "author": "frezgi",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.2",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.0.3",
+    "johnny-five": "^0.13.1",
+    "mongoose": "^5.0.11",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pubnub": "^3.16.5",
+    "pug": "^2.0.3",
+    "socket.io": "^2.0.4"
+  }
+}

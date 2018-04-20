@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Home
+    link(href="/css/bootstrap.css" rel="stylesheet")
+    // Custom styles for this template
+    link(href="navbar-top-fixed.css" rel="stylesheet")
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      a.nav-link.disabled(href="/ami/home") AMI
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href="/ami/home")
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link.disabled(href="/ami/hard-ware-setup") HardWareSetUp
+          li.nav-item
+            a.nav-link.disabled(href="/ami/about") About
+          li.nav-item
+            a.nav-link.disabled(href="/ami/dashboard") Dashboard
+        form.form-inline.mt-2.mt-md-0.register-login
+        
+          a.nav-link.disabled(href="/users/logout") Logout
+    main.navbar.navbar-expand-md(role="main")
+    .jumbotron
+      header
+        h1 Temperature Data from Arduino
+      p.lead
+        | This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.
+    hr
+    h1 List of Technologies used to write the web application
+    hr
+    ul
+      li
+        h2 Programing Language
+        h2
+          u Node.js and Javascript
+        p
+          | the reason why i choose 
+          strong Node.js as backend programming language
+          |  is, becuase it use
+          |      javascript which is an advantage to use one programming language for 
+          strong Front and Backend
+          | .
+          |      It also have very rich supporting modules 
+          strong NPM (Node Package Manager)
+          |  to work with hardware progrming, like johnny-five, serial port,
+          |      and so many others. it also use mongoodb(NOSQL) database which gives an advantage of non relational database.
+        img(src="/npm-downloads.png")
+      li
+        h2 Wepgage Rendering
+      h3
+        u
+          strong HTML and CSS
+      li
+        h2 Database
+      h3
+        u Mangoodb
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/jquery.js")

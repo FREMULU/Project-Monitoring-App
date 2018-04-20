@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title About
+    link(href="/css/bootstrap.css" rel="stylesheet")
+    // Custom styles for this template
+    link(href="navbar-top-fixed.css" rel="stylesheet")
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      a.nav-link.disabled(href="/ami/home") AMI
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link.disabled(href="/ami/home")
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link.disabled(href="/ami/hard-ware-setup") HardWareSetUp
+          li.nav-item
+            a.nav-link.active(href="/ami/about") About
+          li.nav-item
+            a.nav-link.disabled(href="/ami/dashboard") Dashboard
+        form.form-inline.mt-2.mt-md-0.register-login
+          a.nav-link.disabled(href="/users/logout") Logout
+    main.navbar.navbar-expand-md(role="main")
+    .jumbotron
+      h1 About page
+      hr
+      h3 About how can i write the thesis
+      ul
+        li Title of the thesis
+        li If there is any format i can follow
+        li
+          | how to use reference. becuase most of my work depend on websites and video lectures
+        li submission date
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/jquery.js")

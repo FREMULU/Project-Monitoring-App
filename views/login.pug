@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Login page
+    link(href="/css/bootstrap.css" rel="stylesheet")
+    link(href='/css/style.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href="navbar-top-fixed.css" rel="stylesheet")
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      a.nav-link.disabled(href="/") AMI
+
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+
+          a.nav-link.disabled(href="/users/login") Login
+    main.navbar.navbar-expand-md(role="main")
+      .jumbotron.container
+        form(method='POST', action='/users/login')
+          .row.align-items-center
+
+            .w-100
+            #form-group.col-6.offset-md-9.form
+              p.lbl LOGIN FORM
+              hr.lbl
+              label.lbl Username:
+              input.form-control(name='username', type='text')
+            .w-100
+            #form-group.col-6.offset-md-9.form
+              label.lbl Password:
+              input.form-control(name='password', type='password')
+            #form-group.col-6.offset-md-9.form
+              br
+              input.btn.btn-primary(type='submit', value='Login')    
+    
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/jquery.js")

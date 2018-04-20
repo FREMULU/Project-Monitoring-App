@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Register
+    link(href='/css/bootstrap.css', rel='stylesheet')
+    link(href='/css/style.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='navbar-top-fixed.css', rel='stylesheet')
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      a.nav-link.disabled(href='/') AMI
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+        form.form-inline.mt-2.mt-md-0.register-login
+          a.nav-link.disabled(href='/users/login') Login
+    main.navbar.navbar-expand-md(role='main')
+    .jumbotron.container
+      form(method='POST', action='/users/register')
+        .row.align-items-center
+          #form-group.col-6.offset-md-3.form
+            p.lbl PLEASE FILL YOUR DETAILS
+            hr.lbl
+            label.lbl Name:
+            input.form-control(name='name', type='text')
+          .w-100
+          #form-group.col-6.offset-md-3.form
+            label.lbl Email:
+            input.form-control(name='email', type='text')
+          .w-100
+          .w-100
+          #form-group.col-6.offset-md-3.form
+            label.lbl Username:
+            input.form-control(name='username', type='text')
+          .w-100
+          #form-group.col-6.offset-md-3.form
+            label.lbl Password:
+            input.form-control(name='password', type='password')
+          .w-100
+          #form-group.col-6.offset-md-3.form
+            label.lbl Confirm:
+            input.form-control(name='password2', type='password')
+            br
+            input.btn.btn-primary(type='submit', value='Submit')
+          br
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/jquery.js')
