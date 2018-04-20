@@ -1,10 +1,10 @@
 {
   "name": "Project-Monitoring-App",
   "version": "1.0.0",
-  "description": "temp sensor pubnub",
+  "description": "real time remote sensor data visualization",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app"
   },
   "engines": {
       "node": "5.6.0"
